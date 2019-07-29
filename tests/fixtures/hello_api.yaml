@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: '{{title}}'
+  version: '1.0'
+paths:
+  '/':
+    get:
+      operationId: tests.fakeapi.hello.index
+      responses:
+        '200':
+          description: greeting response
+          content:
+            'application/json':
+              schema:
+                type: object
+  '/status':
+    get:
+      operationId: tests.fakeapi.hello.status
+      responses:
+        '200':
+          description: greeting response
+          content:
+            'application/json':
+              schema:
+                type: object
+
+servers:
+  - url: /
