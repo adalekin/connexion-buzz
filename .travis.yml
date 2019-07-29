@@ -1,0 +1,14 @@
+language: python
+python:
+- '3.6'
+- '3.7'
+install:
+- pip install -r requirements-dev.txt
+script:
+- flake8 .
+- pytest
+deploy:
+  provider: pypi
+  user: adalekin
+  password:
+    secure: vzUgtObgOdj/Ko8sMKe6vBTKTIhnd0hmWBRAq0a2xHZHRiFMYfcjUHsIdypKIvYalOYSVwirCkSLz2xf677jeGrH41j+5gC+wtYDSOa+f0ccnt4KqzwcrU5Gw6hxUHazTSGpNgY1FP37Mdou4tGQQgNxFuNxbBKCSm8s13v8RwWBRHR9CxSdNwZd9k7yS+iiYo/RN1HbpYEgSbgCnZQ6lUW8E7vcYMQZEBqOBGSRSpDie4oB/I9IOh9Tz5ylogTi5HDWbLa50JNg+kM1Y+KM7tL8Q3M0nMqa+ifBVhohAWxHcayFSt6B2uTRdbS1xWay2zJcD+Cio6lwcfGXgkoo1y3kdCdmNve1xl8MJOgBylE2veiyTg+uBrPVA7wmk9xnz2q+Nw2GbpY493LdBaLXa6upJMN/x9Sc+7IEJR67AncsdGcHeuoqmyMkLxEZgyDpoWsyWm+NM/fz6IPgu5+Xjv9rMUaG24MwEF5xF+GQ1v1L7UL1vpNt6h9fTjkfw4PaCMILPfXZd/b/WJ5+KPxKAjFQIcM1TrquTCUV2Nv/ESYpkbWol4JPex/tnJzj7HQ+Or5jYih0bXC1838WY0EE2AW9+lbHrJxMbCLqGuwh0AxdKa8CyULRm+WkBid/Wnp1/h9Q8rBlWdNcd9MHjon2tDoaxRrtw8MJBpqWKzIdAlg=

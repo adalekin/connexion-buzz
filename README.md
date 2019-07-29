@@ -14,6 +14,12 @@ Installation
 pip install connexion-buzz
 ```
 
+Usage
+-----
+
+See [examples/basic.py](https://github.com/adalekin/connexion-buzz/blob/master/examples/basic.py) for an example of how to use this exception package.
+
+
 Tests
 -----
 
