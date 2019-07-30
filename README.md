@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/adalekin/connexion-buzz.svg?branch=master)](https://travis-ci.org/adalekin/connexion-buzz) [![Coverage Status](https://coveralls.io/repos/github/adalekin/connexion-buzz/badge.svg?branch=master)](https://coveralls.io/github/adalekin/connexion-buzz?branch=master)
+
 connexion-buzz
 ==============
 
