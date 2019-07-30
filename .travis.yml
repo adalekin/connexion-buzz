@@ -7,11 +7,3 @@ install:
 script:
 - flake8 .
 - pytest
-deploy:
-  provider: pypi
-  user: adalekin
-  password:
-    secure: iNBb4TATj94HZYhvDUTDEMgxIH/ska5C18sGym8LauSX+tJIpu4XGhwf25BRiorJVAZ14W08ft3XBe1rDpA9xkQ7CH+NTsGl519sN638yUFtLQ7cJ3xi36J1BhB7x5Qj85HWtzcM9sGkIIY9+SeMAdE6J/OjFirAa8mPivdSg887pa6nI9On8v5miEp+6bHBA252yWe4mF7Gd8Kjgx2CaaaEAZ3x+PKBe/HKu6HaLwHepPDdl7jNg5B6GV1LI9X8SZ4HyZugrEOwfkMMD2Z9zegS7cVE2ykxCC6gGmgJkKGS9KcysH9Mfhy8OjF3Fme1J60BvbJm8PKsigKYcQydJz/aSk20FTaOb47kk29mRwRiS4Mvo2rtW1jkxNcFxAiNbbVVW41MvaiPn+bfFQEg4+2EljiDcoLe4iaanuLv52S8RkiQ7aY7n0wbDmoy1/hBstP91Z7TvfXEA/S5TNvmaqn5OSiMAJBg2ZrZ8k0kX4j9aJF9nk/mBRNW7GAxCPsHeYdC/g4j8pxQqDg1UFyPTZcUNjbtIfuDXgykR70PzHhUC5lFF9Hdrye/tcQgeucECWSCVQONP8lYYfbmpBwde6o9S5GPUeFYt/AHapd0fBLDzoANHERFXvkgCKdNCZKl1AucYFgScC7xAFE6vRBambpPgvV4aKv6hhBP26HoqHs=
-  on:
-    branch: master
-    repo: adalekin/connexion-buzz
