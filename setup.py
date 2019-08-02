@@ -54,6 +54,7 @@ setup(
     version=version,
     description='py-buzz bindings specifically for connexion applications',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://gitlab.mytradingdata.com/common/connexion-buzz',
     author='Aleksey Dalekin',
     author_email='ald@investex.com',

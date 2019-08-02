@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.1
+-----
+
+* README.md content type fix
+
 0.2.0
 -----
 
