@@ -4,6 +4,8 @@ import flask
 import functools
 import http
 
+VERSION = "0.2.1"
+
 
 class ConnexionBuzz(buzz.Buzz, connexion.ProblemException):
     headers = None
@@ -12,11 +14,7 @@ class ConnexionBuzz(buzz.Buzz, connexion.ProblemException):
     def __init__(self, message, *format_args, **format_kwds):
         super().__init__(message=message, *format_args, **format_kwds)
 
-        connexion.ProblemException.__init__(
-            self=self,
-            status=self.status_code,
-            title=message,
-            type=repr(self))
+        connexion.ProblemException.__init__(self=self, status=self.status_code, title=message, type=repr(self))
 
     @property
     def description(self):
@@ -34,10 +32,7 @@ class ConnexionBuzz(buzz.Buzz, connexion.ProblemException):
 
         headers = headers or self.headers
 
-        response = flask.jsonify({
-            'code': repr(self),
-            'description': description,
-        })
+        response = flask.jsonify({"code": repr(self), "description": description})
 
         response.status_code = self.status_code
 

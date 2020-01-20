@@ -10,14 +10,13 @@ class MyException(connexion_buzz.ConnexionBuzz):
 
 
 def index():
-    raise MyException('basic test')
+    raise MyException("basic test")
 
 
-app = connexion.FlaskApp(__name__, specification_dir='openapi/')
+app = connexion.FlaskApp(__name__, specification_dir="openapi/")
 app.app.register_error_handler(
-    connexion_buzz.ConnexionBuzz,
-    connexion_buzz.ConnexionBuzz.build_error_handler(),
+    connexion_buzz.ConnexionBuzz, connexion_buzz.ConnexionBuzz.build_error_handler(),
 )
 
-app.add_api('my_api.yaml')
+app.add_api("my_api.yaml")
 app.run(port=8080)

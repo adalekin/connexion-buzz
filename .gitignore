@@ -41,5 +41,9 @@ coverage.xml
 .hypothesis/
 .pytest_cache
 
+# pyenv
+.python-version
+.venv
+
 # IDE
 .vscode
