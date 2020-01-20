@@ -4,7 +4,7 @@ import flask
 import functools
 import http
 
-VERSION = "0.2.1"
+VERSION = "0.2.2.dev"
 
 
 class ConnexionBuzz(buzz.Buzz, connexion.ProblemException):
