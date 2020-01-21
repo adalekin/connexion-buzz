@@ -58,7 +58,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     keywords="connexion error py-buzz",
-    packages=find_packages(exclude=["test*"]),
+    packages=find_packages(),
     setup_requires=["pytest-runner"],
     install_requires=install_requirements,
     tests_require=test_requirements,
